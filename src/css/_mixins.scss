@@ -6,6 +6,21 @@
        clear: both;
     }
 }
+
+// 長寬
+@mixin size($w, $h:$w) {
+  width: $w;
+  height: $h;
+}
+
+;
+// 左右置中
+@mixin flexcenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 // 圖片
 @mixin bg($img){
     background: url("./src/images/#{$img}");  
