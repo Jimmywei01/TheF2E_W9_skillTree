@@ -45,22 +45,17 @@
 }
 
 
-
-
-
-
-
-
 body,html{
     background-color: $f2eW1-second;
     color: #fff;
-   
+
 }
 *{
     //  border: 1px solid #fff;
 }
 .header{
-    margin-bottom: 350px;
+    width: 1440px;
+    margin-bottom: 150px;
 }
 
 .moon{
@@ -261,8 +256,8 @@ body,html{
 }
 
 .block14{
-    bottom: 50px;
-    left: 1055px;
+    top: -48px;
+    left: 1091px;
 }
 .icon14 {
     @include size(60px);
@@ -275,8 +270,8 @@ body,html{
 }
 
 .block15{
-    bottom: 50px;
-    left: 1065px;
+    top: 60px;
+    left: 1000px;
 }
 .icon15 {
     @include size(50px);
@@ -289,8 +284,8 @@ body,html{
 }
 
 .block16{
-     bottom: 50px;
-     left: 1075px;
+    top: 170px;
+    left: 873px;
 }
 .icon16 {
     @include size(50px);
@@ -303,8 +298,8 @@ body,html{
 }
 
 .block17{
-     bottom: 50px;
-     left: 1085px;
+    top: -48px;
+    left: 960px;
 }
 .icon17 {
     @include size(50px);
@@ -317,8 +312,8 @@ body,html{
 }
 
 .block18{
-     bottom: 50px;
-     left: 1095px;
+    top: 60px;
+    left: 880px;
 }
 .icon18 {
     @include size(50px);
@@ -331,8 +326,8 @@ body,html{
 }
 
 .block19{
-     bottom: 50px;
-     left: 1105px;
+    top: 170px;
+    left: 742px;
 }
 .icon19 {
     @include size(60px);
@@ -347,7 +342,7 @@ body,html{
 .arrow1 {
     @include  arrowBody(100px, 20px);
     left: 138px;
-    bottom: 65px;
+    bottom: 83px;
     &:before {
         @include arrowHead(100px,-11px); 
     }
@@ -355,7 +350,7 @@ body,html{
 
 .arrow2 {
     @include arrowBody(60px, 20px);
-    bottom: -85px;
+    bottom: -63px;
     left: 32px;
     &:before {
         @include arrowHead(60px, -11px);
@@ -364,7 +359,7 @@ body,html{
 
 .arrow3{
     @include arrowBody(40px, 20px);
-        top: 85px;
+        top: 62px;
         left: 137px;
     &:before {
         @include arrowHead(40px, -11px);
@@ -374,7 +369,7 @@ body,html{
 .arrow4 {
     @include arrowBody(100px, 20px);
     left: 197px;
-    bottom: 4px;
+    bottom: 25px;
     &:before {
         @include arrowHead(100px, -11px);
     }
@@ -394,7 +389,7 @@ body,html{
 .arrow5 {
     @include arrowBody(70px, 20px);
     left: 302px;
-    bottom: 5px;
+    bottom: 29px;
     &:before {
         @include arrowHead(70px, -11px);
     }
@@ -423,7 +418,7 @@ body,html{
 .arrow6{
     @include arrowBody(70px, 20px);
     left: 481px;
-    bottom: 5px;
+    bottom: 29px;
     &:before {
         @include arrowHead(70px, -11px);
     }
@@ -444,54 +439,134 @@ body,html{
 .arrow7{
     @include arrowBody(40px, 20px);
     left: 585px;
-    bottom: 5px;
+    bottom: 29px;
     &:before {
         @include arrowHead(40px, -11px);
     }
 }
 
-// .arrow8{
-//     @include arrowBody(100px, 20px);
-//     left: 1050px;
-//     bottom: 300px;
-//     &:before {
-//         @include arrowHead(100px, -11px);
-//     }
-//     &:after {
-//         content: "";
-//         position: absolute;
-//         margin: 0 auto;
-//         width: 25px;
-//         height: 200px;
-//         border-right: 20px solid #7b7b7b;
-//         border-top: 20px solid #7b7b7b;
-//         border-bottom: 20px solid #7b7b7b;
-//         top: -110px;
-//         left: 10px;
-//     }
-//     .trangle1 {
-//         @include arrowHead(100px, -11px);
-//         top: 98px;
-//         transform: rotate(180deg) translate(120px);
-//     }
+.arrow8{
+    @include arrowBody(100px, 20px);
+    left: 689px;
+    bottom: 5px;
+    &:before {
+        @include arrowHead(100px, -11px);
+    }
+    &:after {
+        content: "";
+        position: absolute;
+        margin: 0 auto;
+        width: 25px;
+        height: 200px;
+        border-right: 20px solid #7b7b7b;
+        border-top: 20px solid #7b7b7b;
+        border-bottom: 20px solid #7b7b7b;
+        top: -110px;
+        left: 10px;
+    }
+    .trangle1 {
+        @include arrowHead(100px, -11px);
+        top: 98px;
+        transform: rotate(180deg) translate(120px);
+    }
 
-//     .trangle2 {
-//         @include arrowHead(100px, -11px);
-//         top: -123px;
-//         transform: rotate(180deg) translate(120px);
-//     }
-//     .trangle3{
-//         @include arrowBody(70px, 20px);
-//         top: 110px;
-//         &:before {
-//             @include arrowHead(70px, -11px);
-//         }
-//     }
-//     .trangle4 {
-//         @include arrowBody(70px, 20px);
-//         top: -110px;
-//         &:before {
-//             @include arrowHead(70px, -11px);
-//         }
-//     }
+    .trangle2 {
+        @include arrowHead(100px, -11px);
+        top: -123px;
+        transform: rotate(180deg) translate(120px);
+    }
+    .trangle3{
+        @include arrowBody(70px, 20px);
+        top: 110px;
+        &:before {
+            @include arrowHead(70px, -11px);
+        }
+    }
+    .trangle4 {
+        @include arrowBody(70px, 20px);
+        top: -133px;
+        &:before {
+            @include arrowHead(70px, -11px);
+        }
+    }
+}
+
+
+.content{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.spaceCat{
+        position: absolute;
+        left: 0;
+}
+
+.description{
+    display: flex;
+    align-items: center;
+    margin: 60px 0 0 130px;
+    border: 15px solid #0093ff;
+    border-radius: 65px;
+    line-height: 1.5;
+    height: 350px;
+    background-color: #fff;
+}
+.descrContent{
+        margin-right: 30px;
+}
+
+.smallImg{
+    width: 150px;
+    height: 150px;
+    float: left;
+    margin: 0 30px;
+    img{
+        width: 150px;
+        height: 150px;
+    }
+}
+.smallTitle{
+        display: inline-block;
+        font-size: 25px;
+        color: #353535;
+}
+.refText{
+    float: right;
+    font-size: 25px;
+    color: #353535;
+}
+.smallContent{
+    font-size: 30px;
+    color: #7b7b7b;
+    width: 700px;
+}
+
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+// .footerImg{
+//     display: flex;
+//     z-index: 1;
+//     margin: 250px auto;
 // }
+.sixCat{
+    @include size(250px);
+    z-index: 1;
+    margin-top: 280px;
+    margin-left: 50px;
+}
+.space{
+    z-index: 1;
+    margin: 150px 150px 0 0;
+    img{
+        @include size(200px, 550px);
+    }
+
+}
+.blob{
+    position: absolute;
+}
