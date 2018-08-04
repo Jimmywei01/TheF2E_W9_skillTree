@@ -538,11 +538,6 @@
     justify-content: space-between;
 }
 
-// .footerImg{
-//     display: flex;
-//     z-index: 1;
-//     margin: 250px auto;
-// }
 .sixCat{
     @include size(250px);
     z-index: 1;
@@ -559,4 +554,18 @@
 }
 .blob{
     position: absolute;
+}
+
+
+
+.changeBorder{
+  border-color:#5791ff;
+}
+
+.arrowColor{
+  
+  background-color:#fff;
+  &:before{
+    border-color:transparent transparent transparent #fff;
+  }
 }
